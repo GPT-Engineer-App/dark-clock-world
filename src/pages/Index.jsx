@@ -37,9 +37,11 @@ const Index = () => {
             <FaGlobe style={{ marginRight: "8px" }} /> World Clock
           </Heading>
           {timeZones.map((tz) => (
-            <Box key={tz.name} p={3} shadow="sm" borderWidth="1px" rounded="md" bg="gray.700" color="white">
+            <Box key={tz.name} p={5} shadow="sm" borderWidth="1px" rounded="md" bg="linear-gradient(145deg, #2c5282, #2a4365)" color="white">
               <Text fontWeight="bold">{tz.name}</Text>
-              <Text fontSize="xl">{times[tz.name]}</Text>
+              <Text fontSize="2xl" fontWeight="semibold">
+                {times[tz.name]}
+              </Text>
             </Box>
           ))}
         </Box>
