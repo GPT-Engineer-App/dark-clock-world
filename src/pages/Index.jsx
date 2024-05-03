@@ -30,7 +30,7 @@ const Index = () => {
   const color = useColorModeValue("white", "gray.200");
 
   return (
-    <Container maxW="container.md" p={4}>
+    <Container minH="100vh" minW="100vw" p={4}>
       <VStack spacing={8} align="stretch">
         <Box p={5} shadow="md" borderWidth="1px" bg={bg} color={color}>
           <Heading fontSize="xl" mb={4} display="flex" alignItems="center">
